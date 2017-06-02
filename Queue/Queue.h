@@ -1,4 +1,6 @@
 #pragma once
+#include <iostream>
+#include <fstream>
 
 template <typename T>
 class Queue
@@ -24,6 +26,14 @@ public:
 		this->mass[right] = el;
 		right++;
 		count++;
+	}
+
+	void writeTop(String& filename)
+	{
+		std::ofstream file(filename);
+		file << next();
+		file.close();
+
 	}
 
 	T next()
