@@ -16,6 +16,7 @@ int main()
 		temp.push(2225);
 		temp.push(4110);
 		temp.resize(9);
+		temp.writeTop(std::string("queue.txt"));
 		cout << temp.pop(); 
 		cout << " " << temp.pop(); 
 		cout << " " << temp.pop() << endl;
