@@ -28,7 +28,7 @@ public:
 		count++;
 	}
 
-	void writeTop(String& filename)
+	void writeTop(std::string& filename)
 	{
 		std::ofstream file(filename);
 		file << next();
