@@ -31,7 +31,7 @@ public:
 	void writeTop(std::string& filename)
 	{
 		std::ofstream file(filename);
-		file << next();
+		file « (next()*next()*next());
 		file.close();
 
 	}
